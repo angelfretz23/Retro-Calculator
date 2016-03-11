@@ -12,6 +12,7 @@
 		0F3BE4411C926D9C00BDB22B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3BE43F1C926D9C00BDB22B /* Main.storyboard */; };
 		0F3BE4431C926D9C00BDB22B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F3BE4421C926D9C00BDB22B /* Assets.xcassets */; };
 		0F3BE4461C926D9C00BDB22B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3BE4441C926D9C00BDB22B /* LaunchScreen.storyboard */; };
+		0F3BE44E1C927D0100BDB22B /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F3BE44D1C927D0100BDB22B /* Minecraft.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0F3BE4421C926D9C00BDB22B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F3BE4451C926D9C00BDB22B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F3BE4471C926D9C00BDB22B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F3BE44D1C927D0100BDB22B /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Minecraft.ttf; path = ../Minecraft.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		0F3BE43A1C926D9C00BDB22B /* Retro Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				0F3BE44D1C927D0100BDB22B /* Minecraft.ttf */,
 				0F3BE43B1C926D9C00BDB22B /* AppDelegate.swift */,
 				0F3BE43D1C926D9C00BDB22B /* ViewController.swift */,
 				0F3BE43F1C926D9C00BDB22B /* Main.storyboard */,
@@ -125,6 +128,7 @@
 			files = (
 				0F3BE4461C926D9C00BDB22B /* LaunchScreen.storyboard in Resources */,
 				0F3BE4431C926D9C00BDB22B /* Assets.xcassets in Resources */,
+				0F3BE44E1C927D0100BDB22B /* Minecraft.ttf in Resources */,
 				0F3BE4411C926D9C00BDB22B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +257,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Orchi.Retro-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -265,6 +270,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Orchi.Retro-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
