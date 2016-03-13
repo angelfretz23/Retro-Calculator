@@ -1,0 +1,401 @@
+Last login: Thu Mar 10 18:59:47 on console
+Angels-MacBook-Pro:~ AngelC$ ls
+Applications		Google Drive
+B009G235YG_EBOK.apnx	Library
+B009G235YG_EBOK.azw	Movies
+B009G235YG_EBOK.mbpV2	Music
+B009G235YG_EBOK.phl	OneDrive
+Desktop			Pictures
+Documents		Public
+Downloads		bin
+Dropbox			terminal-fun
+Angels-MacBook-Pro:~ AngelC$ cd Documents
+Angels-MacBook-Pro:Documents AngelC$ ls
+10001Prime.komodoproject
+10001PrimeNumber
+Angel Contreras 15.tax2015
+Angel Contreras.pdf
+Apple Support Payment.pdf
+AutoSave_shogiBoard.skp
+BBWorkspace
+BIO 03
+DateThreshold.t2d
+Epubsoft
+GeekTools
+JAP 01
+Java
+Line 6
+Microsoft User Data
+Objective-C
+Photoshop
+PuchaseRecon.t2d
+Receipts
+Safari CSS
+TaxReturns 2015.pdf
+TaxReturns2015 22pg.pdf
+Taxes
+Taxes 2014.tax2014
+Vehicle Registration Renewal 2015.pdf
+XCode
+directions.pdf
+iOSNanoDegree
+iPhone Pics
+ios-nanodegree-uikit
+shogiBoard.skp
+shogiBoard~.skp
+Angels-MacBook-Pro:Documents AngelC$ cd XCode/
+Angels-MacBook-Pro:XCode AngelC$ ls
+10001PrimeNumber		Rock Paper Scissors Apple Watch
+AppleWatchRockPaperScissors	Roshambo
+BMICalc				StockViewController
+Calculator			Sum Square Difference
+Chapter 13 Challenge		SuperCool
+Christmas Tree			TableTry
+Click Counter			TapperApp
+Color Maker with Sliders	Test
+Conditionals.playground		Test.playground
+DateList			TimeAfterTime
+DateProject			TimesTwo
+HelloAppleWatch			TimesTwo.xcworkspace
+LineItemApp.java		UpTownFuctionYouUP.playground
+MultiplyApp			Variables.playground
+MyPlayground.playground		WayneShopBook.playground
+OptionalStudy.playground	buffer
+PBR				h
+PitchPerfect			iPad Test.xcworkspace
+PitchPerfect-ObjC		metersToFeetandInches
+PitchPerfect.zip		testingSwift.playground
+Red or Blue Bomb		tmStruct
+Retro Calculator
+Angels-MacBook-Pro:XCode AngelC$ cd Retro\ Calculator/
+Angels-MacBook-Pro:Retro Calculator AngelC$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Retro Calculator.xcodeproj/project.pbxproj
+	modified:   Retro Calculator.xcodeproj/xcuserdata/AngelC.xcuserdatad/xcschemes/Retro Calculator.xcscheme
+	modified:   Retro Calculator/Info.plist
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Angels-MacBook-Pro:Retro Calculator AngelC$ git add -A
+Angels-MacBook-Pro:Retro Calculator AngelC$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   Retro Calculator.xcodeproj/project.pbxproj
+	modified:   Retro Calculator.xcodeproj/xcuserdata/AngelC.xcuserdatad/xcschemes/Retro Calculator.xcscheme
+	modified:   Retro Calculator/Info.plist
+
+Angels-MacBook-Pro:Retro Calculator AngelC$ git commit
+
+[1]+  Stopped                 git commit
+Angels-MacBook-Pro:Retro Calculator AngelC$ git commit -m
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit hook
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+Angels-MacBook-Pro:Retro Calculator AngelC$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   Retro Calculator.xcodeproj/project.pbxproj
+	modified:   Retro Calculator.xcodeproj/xcuserdata/AngelC.xcuserdatad/xcschemes/Retro Calculator.xcscheme
+	modified:   Retro Calculator/Info.plist
+
+Angels-MacBook-Pro:Retro Calculator AngelC$ git commit -m "Beginning"
+[master 13eef85] Beginning
+ 3 files changed, 48 insertions(+), 2 deletions(-)
+Angels-MacBook-Pro:Retro Calculator AngelC$ git status
+On branch master
+nothing to commit, working directory clean
+Angels-MacBook-Pro:Retro Calculator AngelC$ git remote
+Angels-MacBook-Pro:Retro Calculator AngelC$ git remote -v
+Angels-MacBook-Pro:Retro Calculator AngelC$ git remote h
+error: Unknown subcommand: h
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+Angels-MacBook-Pro:Retro Calculator AngelC$ git remote add git@github.com:angelfretz23/Retro-Calculator.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+Angels-MacBook-Pro:Retro Calculator AngelC$ git remote RetroCalc git@github.com:angelfretz23/Retro-Calculator.git
+error: Unknown subcommand: RetroCalc
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+Angels-MacBook-Pro:Retro Calculator AngelC$ git remote add RetroCalc git@github.com:angelfretz23/Retro-Calculator.git
+Angels-MacBook-Pro:Retro Calculator AngelC$ git remote -v
+RetroCalc	git@github.com:angelfretz23/Retro-Calculator.git (fetch)
+RetroCalc	git@github.com:angelfretz23/Retro-Calculator.git (push)
+Angels-MacBook-Pro:Retro Calculator AngelC$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   Retro Calculator/Assets.xcassets/Contents.json
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Retro Calculator/Assets.xcassets/0.imageset/
+	Retro Calculator/Assets.xcassets/1.imageset/
+	Retro Calculator/Assets.xcassets/2.imageset/
+	Retro Calculator/Assets.xcassets/3.imageset/
+	Retro Calculator/Assets.xcassets/4.imageset/
+	Retro Calculator/Assets.xcassets/5.imageset/
+	Retro Calculator/Assets.xcassets/6.imageset/
+	Retro Calculator/Assets.xcassets/7.imageset/
+	Retro Calculator/Assets.xcassets/8.imageset/
+	Retro Calculator/Assets.xcassets/9.imageset/
+	Retro Calculator/Assets.xcassets/add.imageset/
+	Retro Calculator/Assets.xcassets/backpanel.imageset/
+	Retro Calculator/Assets.xcassets/counter.imageset/
+	Retro Calculator/Assets.xcassets/divide.imageset/
+	Retro Calculator/Assets.xcassets/equal.imageset/
+	Retro Calculator/Assets.xcassets/ground.imageset/
+	Retro Calculator/Assets.xcassets/multiply.imageset/
+	Retro Calculator/Assets.xcassets/space-bg.imageset/
+	Retro Calculator/Assets.xcassets/subtract.imageset/
+
+Angels-MacBook-Pro:Retro Calculator AngelC$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+
+Angels-MacBook-Pro:Retro Calculator AngelC$ git add -A
+Angels-MacBook-Pro:Retro Calculator AngelC$ git commit -m "Added Assests"
+[master 437de8e] Added Assests
+ 39 files changed, 405 insertions(+)
+ create mode 100644 Retro Calculator/Assets.xcassets/0.imageset/0.png
+ create mode 100644 Retro Calculator/Assets.xcassets/0.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/1.imageset/1.png
+ create mode 100644 Retro Calculator/Assets.xcassets/1.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/2.imageset/2.png
+ create mode 100644 Retro Calculator/Assets.xcassets/2.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/3.imageset/3.png
+ create mode 100644 Retro Calculator/Assets.xcassets/3.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/4.imageset/4.png
+ create mode 100644 Retro Calculator/Assets.xcassets/4.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/5.imageset/5.png
+ create mode 100644 Retro Calculator/Assets.xcassets/5.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/6.imageset/6.png
+ create mode 100644 Retro Calculator/Assets.xcassets/6.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/7.imageset/7.png
+ create mode 100644 Retro Calculator/Assets.xcassets/7.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/8.imageset/8.png
+ create mode 100644 Retro Calculator/Assets.xcassets/8.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/9.imageset/9.png
+ create mode 100644 Retro Calculator/Assets.xcassets/9.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/add.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/add.imageset/add.png
+ create mode 100644 Retro Calculator/Assets.xcassets/backpanel.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/backpanel.imageset/backpanel.png
+ create mode 100644 Retro Calculator/Assets.xcassets/counter.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/counter.imageset/counter.png
+ create mode 100644 Retro Calculator/Assets.xcassets/divide.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/divide.imageset/divide.png
+ create mode 100644 Retro Calculator/Assets.xcassets/equal.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/equal.imageset/equal.png
+ create mode 100644 Retro Calculator/Assets.xcassets/ground.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/ground.imageset/ground.png
+ create mode 100644 Retro Calculator/Assets.xcassets/multiply.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/multiply.imageset/multiply.png
+ create mode 100644 Retro Calculator/Assets.xcassets/space-bg.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/space-bg.imageset/space-bg.png
+ create mode 100644 Retro Calculator/Assets.xcassets/subtract.imageset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/subtract.imageset/subtract.png
+Angels-MacBook-Pro:Retro Calculator AngelC$ git remote push RetroCalc
+error: Unknown subcommand: push
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+Angels-MacBook-Pro:Retro Calculator AngelC$ git push RetroCalc master
+Saving password to keychain failed
+'Saving password to keychain failed
+Saving password to keychain failed
+Identity added: /Users/AngelC/.ssh/id_rsa ((null))
+Counting objects: 93, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (87/87), done.
+Writing objects: 100% (93/93), 80.10 KiB | 0 bytes/s, done.
+Total 93 (delta 36), reused 0 (delta 0)
+To git@github.com:angelfretz23/Retro-Calculator.git
+ * [new branch]      master -> master
+Angels-MacBook-Pro:Retro Calculator AngelC$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Retro Calculator/Base.lproj/Main.storyboard
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Retro Calculator/Assets.xcassets/btn.dataset/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Angels-MacBook-Pro:Retro Calculator AngelC$ git add -A
+Angels-MacBook-Pro:Retro Calculator AngelC$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   Retro Calculator/Assets.xcassets/btn.dataset/Contents.json
+	new file:   Retro Calculator/Assets.xcassets/btn.dataset/btn.wav
+	modified:   Retro Calculator/Base.lproj/Main.storyboard
+
+Angels-MacBook-Pro:Retro Calculator AngelC$ git commit -m "Layout finish"
+[master 332aa36] Layout finish
+ 3 files changed, 219 insertions(+), 3 deletions(-)
+ create mode 100644 Retro Calculator/Assets.xcassets/btn.dataset/Contents.json
+ create mode 100644 Retro Calculator/Assets.xcassets/btn.dataset/btn.wav
+Angels-MacBook-Pro:Retro Calculator AngelC$ git push RetroCalc master
+Counting objects: 9, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 26.05 KiB | 0 bytes/s, done.
+Total 9 (delta 4), reused 0 (delta 0)
+To git@github.com:angelfretz23/Retro-Calculator.git
+   437de8e..332aa36  master -> master
+Angels-MacBook-Pro:Retro Calculator AngelC$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   Minecraft.ttf
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Retro Calculator.xcodeproj/project.pbxproj
+	modified:   Retro Calculator/Base.lproj/Main.storyboard
+	modified:   Retro Calculator/Info.plist
+
+Angels-MacBook-Pro:Retro Calculator AngelC$ git add -A
+Angels-MacBook-Pro:Retro Calculator AngelC$ git commit
+
+[2]+  Stopped                 git commit
+Angels-MacBook-Pro:Retro Calculator AngelC$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   Minecraft.ttf
+	modified:   Retro Calculator.xcodeproj/project.pbxproj
+	modified:   Retro Calculator/Base.lproj/Main.storyboard
+	modified:   Retro Calculator/Info.plist
+
+Angels-MacBook-Pro:Retro Calculator AngelC$ git commit -m "Finished Main Storyboard. Ready to write Source code"
+[master cf4e0e0] Finished Main Storyboard. Ready to write Source code
+ 4 files changed, 48 insertions(+), 6 deletions(-)
+ create mode 100755 Minecraft.ttf
+Angels-MacBook-Pro:Retro Calculator AngelC$ git status
+
