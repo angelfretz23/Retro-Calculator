@@ -93,6 +93,12 @@ class ViewController: UIViewController {
     
     func pressedOperation(op:Operation){
         playSound()
+        
+        if currentOperation != Operation.Empty{
+            //TODO: do calculation
+        } else {
+            //TODO: first time operator is being pressed
+        }
     }
     
     func playSound(){
