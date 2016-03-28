@@ -43,6 +43,10 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func clearPressed(btn: UIButton!){
+        reset()
+    }
+    
     @IBAction func numberPressed(btn: UIButton!){
         playSound()
         appendToOutput(btn.tag)
@@ -52,8 +56,8 @@ class ViewController: UIViewController {
     
     @IBAction func onDividePress(btn: UIButton!) {
         pressedOperation(Operation.Divide)
-        rightValStr = self.runningNumber
-        runningNumber = ""
+//        rightValStr = self.runningNumber
+//        runningNumber = ""
         currentOperation = Operation.Divide
     }
     
@@ -85,6 +89,8 @@ class ViewController: UIViewController {
     }
     
     func reset(){
+        playSound()
+        outputLbl.text = "0"
         rightValStr = ""
         leftValStr = ""
         runningNumber = ""
@@ -129,5 +135,7 @@ class ViewController: UIViewController {
         }
         btnSound.play()
     }
+    
+    
 }
 
