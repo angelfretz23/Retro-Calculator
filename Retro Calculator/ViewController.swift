@@ -16,7 +16,6 @@ class ViewController: UIViewController {
         case Multiply = "*"
         case Subract = "-"
         case Add = "+"
-        case Equals = "="
         case Empty = "Empty"
     }
     
@@ -28,6 +27,7 @@ class ViewController: UIViewController {
     var runningNumber = ""
     var leftValStr = ""
     var rightValStr = ""
+    var result = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,12 +70,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onEqualPressed(sender: UIButton) {
-        pressedOperation(Operation.Equals)
-        var equals: Float?
-        equals = Float(rightValStr)! / Float(runningNumber)!
-        outputLbl.text = "\(equals!)"
-        equals = nil
-        reset()
+        pressedOperation(currentOperation)
+//        var equals: Float?
+//        equals = Float(rightValStr)! / Float(runningNumber)!
+//        outputLbl.text = "\(equals!)"
+//        equals = nil
+//        reset()
     }
 
     
@@ -95,9 +95,31 @@ class ViewController: UIViewController {
         playSound()
         
         if currentOperation != Operation.Empty{
-            //TODO: do calculation
+            
+            if runningNumber != ""{
+            rightValStr = runningNumber
+            runningNumber = ""
+            
+            if currentOperation == Operation.Multiply {
+                result = "\(Double(leftValStr)! * Double(rightValStr)!)"
+            } else if currentOperation == Operation.Divide {
+                result = "\(Double(leftValStr)! / Double(rightValStr)!)"
+            } else if currentOperation == Operation.Subract {
+                result = "\(Double(leftValStr)! - Double(rightValStr)!)"
+            } else if currentOperation == Operation.Add {
+                result = "\(Double(leftValStr)! + Double(rightValStr)!)"
+            }
+            
+            leftValStr = result
+            outputLbl.text = result
+            }
+            currentOperation = op
+            
         } else {
             //TODO: first time operator is being pressed
+            leftValStr = runningNumber
+            runningNumber = ""
+            currentOperation = op
         }
     }
     
